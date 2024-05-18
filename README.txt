@@ -8,6 +8,13 @@ CRUD Operations: Users can create, read, update, and delete artifacts (songs).
 Encryption: Content of artifacts is encrypted for security.
 Automated Testing: Flake8 is used for linting to enforce coding standards, and Bandit is used for security testing to detect common security issues.
 
+Modules and Libraries
+subprocess: Used for running system commands (flake8 and bandit) to check code quality and security.
+hashlib: Provides secure hash functions for checksum generation.
+datetime: Handles dates and times for artifact creation and modification.
+getpass: Securely prompts the user for passwords.
+sqlite3: Interacts with the SQLite database.
+
 Usage
 Prerequisites
 Python 3.x installed on your system
