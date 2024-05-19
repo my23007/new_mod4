@@ -14,6 +14,9 @@ hashlib: Provides secure hash functions for checksum generation.
 datetime: Handles dates and times for artifact creation and modification.
 getpass: Securely prompts the user for passwords.
 sqlite3: Interacts with the SQLite database.
+flake8 to check for style and syntax issues.
+bandit to check for security issues.
+
 
 Usage
 Prerequisites
