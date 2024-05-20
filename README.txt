@@ -9,7 +9,7 @@ Encryption: Content of artifacts is encrypted for security.
 Automated Testing: Flake8 is used for linting to enforce coding standards, and Bandit is used for security testing to detect common security issues.
 Bandit output codes are available online (Code Quality, 2021) 
 
-## Modules and Libraries
+**Modules and Libraries**
 subprocess: Used for running system commands (flake8 and bandit) to check code quality and security.
 hashlib: Provides secure hash functions for checksum generation.
 datetime: Handles dates and times for artifact creation and modification.
@@ -19,12 +19,12 @@ flake8 to check for style and syntax issues.
 bandit to check for security issues.
 
 
-## Usage
+**Usage**
 Prerequisites
 Python 3.x installed on your system
 pip package manager
 
-## Installation
+**Installation**
 Clone the repository:
 myounes@myouneslap MINGW64 ~
 $ git clone https://github.com/my23007/new_mod4.git
@@ -210,10 +210,10 @@ Enter the ID of the artifact to delete: 123
 Artifact does not exist.
 
 
-## Limitations:
+**Limitations**
 This is a deviation from the original design proposed in the first assignment, I used my own UML class diagram for simplicity and ease in coding. The original one encompasses many classes and attributes and will complicate the python code, hence I used my simplified version as this is for educational purpose.
 
-## References:
+**References**
 
 Code Quality (2021). Bandit Low Level Issues. Available from: https://docs.embold.io/bandit-low-level-issues/ [Accessed 20 May. 2024].
 Heiland, R., Rynge, M., Vahi, K., Deelman, E. and Welch, V., 2019. A Guide for Software Assurance for SWIP.
