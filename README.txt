@@ -1,8 +1,8 @@
-## Music App
+**Music App**
 This Python script implements a simple music app with CRUD functionality for managing artifacts (songs). It also includes automated testing tools (Flake8 for linting and Bandit for security testing) to ensure code quality and security. In this context, Heiland et al (2019) used Flake8 and Bandit as part of the software assurance to evaluate python code. Furthermore, Mohialdenq et al (2023) argue that flake8 can scan the python code for possible bugs and issues related to style and format by utilizing pre-established criteria
 Moreover, it employs SQLite for database management, hashlib for checksum computation, and basic encryption techniques. The main classes include Database, MusicApp, User, and Administrator, each serving distinct roles in the application. Additionally, the script includes automated testing functions to ensure the integrity and security of the codebase.
 
-## Features
+**Features**
 User Authentication: Users can authenticate with a username and password.
 CRUD Operations: Users can create, read, update, and delete artifacts (songs).
 Encryption: Content of artifacts is encrypted for security.
