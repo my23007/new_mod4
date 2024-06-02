@@ -1,15 +1,15 @@
-**Music App**
+Music App
 This Python script implements a simple music app with CRUD functionality for managing artifacts (songs). It also includes automated testing tools (Flake8 for linting and Bandit for security testing) to ensure code quality and security. In this context, Heiland et al (2019) used Flake8 and Bandit as part of the software assurance to evaluate python code. Furthermore, Mohialdenq et al (2023) argue that flake8 can scan the python code for possible bugs and issues related to style and format by utilizing pre-established criteria
 Moreover, it employs SQLite for database management, hashlib for checksum computation, and basic encryption techniques. The main classes include Database, MusicApp, User, and Administrator, each serving distinct roles in the application. Additionally, the script includes automated testing functions to ensure the integrity and security of the codebase.
 
-**Features**
+Features
 User Authentication: Users can authenticate with a username and password.
 CRUD Operations: Users can create, read, update, and delete artifacts (songs).
 Encryption: Content of artifacts is encrypted for security.
 Automated Testing: Flake8 is used for linting to enforce coding standards, and Bandit is used for security testing to detect common security issues.
 Bandit output codes are available online (Code Quality, 2021) 
 
-**Modules and Libraries**
+Modules and Libraries
 subprocess: Used for running system commands (flake8 and bandit) to check code quality and security.
 hashlib: Provides secure hash functions for checksum generation.
 datetime: Handles dates and times for artifact creation and modification.
@@ -18,13 +18,35 @@ sqlite3: Interacts with the SQLite database.
 flake8 to check for style and syntax issues.
 bandit to check for security issues.
 
+Structure and Components
+-Database Management (Database class)
 
-**Usage**
+Initialization: The __init__ method establishes a connection to an SQLite database. If the specified database does not exist, it creates one. The create_tables method sets up two tables (users and artifacts) with the necessary schema.
+Database Operations: This class provides methods to execute queries (execute_query) and fetch results (fetch_one, fetch_all).
+
+-Music Management (MusicApp class)
+
+Initialization: The class initializes with a reference to the Database instance and maintains a set of authenticated users.
+User Authentication: The authenticate_user and is_authenticated methods manage user authentication.
+Artifact Management: Methods like generate_artifact_id, encrypt_content, artifact_exists, store_artifact, update_artifact, and delete_artifact handle the creation, update, and deletion of song artifacts.
+
+-User Management (User and Administrator classes)
+
+Base User Class: The User class contains methods for adding, updating, and deleting artifacts, with checks for user authentication.
+Administrator Class: Inherits from User and restricts certain operations (like adding and deleting artifacts) to the admin user.
+
+-Testing and Command-Line Interaction (run_tests function and main execution block)
+
+Code Analysis Tools: The run_tests function runs code quality and security tools (Flake8 and Bandit).
+Artifact Testing: This function also tests the creation of artifacts with checksum and encryption verification.
+Command-Line Interaction: The main block gathers user input for creating and deleting artifacts through an admin account.
+
+Usage
 Prerequisites
 Python 3.x installed on your system
 pip package manager
 
-**Installation**
+Installation
 Clone the repository:
 myounes@myouneslap MINGW64 ~
 $ git clone https://github.com/my23007/new_mod4.git
@@ -210,11 +232,10 @@ Enter the ID of the artifact to delete: 123
 Artifact does not exist.
 
 
-**Limitations**
-This is a deviation from the original design proposed in the first assignment, I used my own UML class diagram for simplicity and ease in coding. The original one encompasses many classes and attributes and will complicate the python code, hence I used my simplified version as this is for educational purpose.
-Moreover, The encryption method used is reverse ciphering which is considered as a weak approach and an adversary can easily find out the message content (tutorialspoint, 2024)
+Limitations:
+This is a deviation from the original design proposed in the first assignment, I used my own UML class diagram for simplicity and ease in coding. The original one encompasses many classes and attributes and will complicate the python code, hence I used my simplified version as this is for educational purpose. Moreover, The encryption method used is reverse ciphering which is considered as a weak approach and an adversary can easily find out the message content (tutorialspoint, 2024)
 
-**References**
+References:
 
 Code Quality (2021). Bandit Low Level Issues. Available from: https://docs.embold.io/bandit-low-level-issues/ [Accessed 20 May. 2024].
 Heiland, R., Rynge, M., Vahi, K., Deelman, E. and Welch, V., 2019. A Guide for Software Assurance for SWIP.
