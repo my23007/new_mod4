@@ -212,9 +212,11 @@ Artifact does not exist.
 
 **Limitations**
 This is a deviation from the original design proposed in the first assignment, I used my own UML class diagram for simplicity and ease in coding. The original one encompasses many classes and attributes and will complicate the python code, hence I used my simplified version as this is for educational purpose.
+Moreover, The encryption method used is reverse ciphering which is considered as a weak approach and an adversary can easily find out the message content (tutorialspoint, 2024)
 
 **References**
 
 Code Quality (2021). Bandit Low Level Issues. Available from: https://docs.embold.io/bandit-low-level-issues/ [Accessed 20 May. 2024].
 Heiland, R., Rynge, M., Vahi, K., Deelman, E. and Welch, V., 2019. A Guide for Software Assurance for SWIP.
 Mohialdenq, Y.M., Hussien, N.M., Baker, E.J., Joshi, K. and Mohialdenq, Y.M., 2023. A Comparative Analysis of Python Code-Line Bug-Finding Methods.
+tutorialspoint (2024).Cryptography with Python Tutorial. Available from: https://www.tutorialspoint.com/cryptography_with_python/cryptography_with_python_reverse_cipher.htm [Accessed 02 Jun. 2024].
